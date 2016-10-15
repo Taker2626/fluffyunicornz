@@ -70,8 +70,7 @@ def main():
     if not events:
         print('No upcoming events found.')
     for event in events:
-        start = event['start'].get('dateTime', event['start'].get('date'))
-        print(start, event['description'])
+        print( event['description'])
 
 
 if __name__ == '__main__':
